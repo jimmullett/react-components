@@ -11,7 +11,7 @@ function App() {
     <main>
       <header>
         <h1>React Component Library</h1>
-        <h2>Scrimba Advanced React Course</h2>
+        <h2>Scrimba Advanced React Course - this is still a work in progress, check back for updates!</h2>
       </header>
 
       <h3>Badges</h3>
