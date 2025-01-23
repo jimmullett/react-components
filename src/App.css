@@ -2,6 +2,9 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+main {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -9,15 +12,27 @@
   flex-direction: column;
 }
 
-h1 {
-  font-size: 2rem;
-  color: #c0d0e0;
-  margin-block: 0px;
+header {
+  margin-bottom: 30px;
+
+  & > h1 {
+    font-size: 2rem;
+    color: #c0d0e0;
+    margin-block: 0px;
+    font-family: "Permanent Marker", serif;
+    line-height: 1;
+  }
+  
+  & > h2 {
+    color: #90a0b0;
+    margin-block: 0px;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
 }
 
-h2 {
-  color: #90a0b0;
-  margin-block: 0px;
+h3 {
+  margin-block: 5px;
 }
 
 section.badges {
@@ -25,7 +40,15 @@ section.badges {
   min-width: 400px;
   max-width: 600px;
 
-  & span {
+  & span.badge {
+    margin: 5px;
+  }
+}
+
+section.banners {
+  display: flex;
+
+  & > div {
     margin: 5px;
   }
 }
