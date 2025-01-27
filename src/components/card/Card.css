@@ -1,0 +1,41 @@
+article.card {
+  text-align: center;
+  background-color: #ffffff;
+  color: #222;
+  border-radius: 6px;
+  padding: 30px;
+  width: 380px;
+  margin-top: 50px;
+
+  & > div.icon {
+    width: 48px;
+    height: 48px;
+    margin-top: -54px;
+    margin-left: 166px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 4px 6px -2px #0000000D;
+    border-radius: 6px;
+  }
+
+  & > h1 {
+    margin: 60px 5px 5px 5px;
+  }
+
+  & > p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #6B7280;
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 15px -3px #ffffff2a;
+  }
+
+}
+
+

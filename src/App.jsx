@@ -3,6 +3,10 @@ import './App.css'
 
 import Badge from "./components/badge/Badge"
 import Banner from "./components/banner/Banner"
+import Card from "./components/card/Card"
+
+import cloudUploadIcon from '/src/assets/cloud-upload.svg'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -64,6 +68,19 @@ function App() {
           <Banner status="info" title="This is some info"></Banner>
         </div>
       </section>
+
+      <br />
+
+      <h3>Cards</h3>
+      <section className="cards">
+        <Card 
+          icon={cloudUploadIcon}
+          backgroundColor="#3F75FE"
+          title="Easy Deployment">
+            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+          </Card>
+      </section>
+
     </main>
   )
 }
