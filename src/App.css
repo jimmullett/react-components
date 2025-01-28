@@ -31,8 +31,8 @@ header {
   }
 }
 
-h3 {
-  margin-block: 5px;
+main > h3 {
+  margin-block: 30px 5px;
 }
 
 section.badges {

@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 
-import Badge from "./components/badge/Badge"
-import Banner from "./components/banner/Banner"
-import Card from "./components/card/Card"
+import Badge from './components/badge/Badge'
+import Banner from './components/banner/Banner'
+import Card from './components/card/Card'
+import Testimonial from './components/testimonial/testimonial'
 
-import cloudUploadIcon from '/src/assets/cloud-upload.svg'
+import cloudUploadIcon from '/src/assets/cloud-upload.svg';
 
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -72,7 +73,7 @@ function App() {
       <br />
 
       <h3>Cards</h3>
-      <section className="cards">
+      <section>
         <Card 
           icon={cloudUploadIcon}
           backgroundColor="#3F75FE"
@@ -81,8 +82,21 @@ function App() {
           </Card>
       </section>
 
+      <br />
+
+      <h3>Testimonials</h3>
+      <section>
+        <Testimonial
+          name="May Andersons"
+          image="MayAndersons.png"
+          company="Workcation"
+          jobTitle="CTO"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+        </Testimonial>
+      </section>
     </main>
   )
-}
+};
 
-export default App
+

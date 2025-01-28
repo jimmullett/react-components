@@ -1,4 +1,4 @@
-import "./Card.css"
+import './Card.css';
 
 export default function Card({title, icon, backgroundColor, children}) {
   return (<>
@@ -10,4 +10,4 @@ export default function Card({title, icon, backgroundColor, children}) {
       <p>{children}</p>
     </article>
   </>)
-}
+};

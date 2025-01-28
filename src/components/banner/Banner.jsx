@@ -1,8 +1,8 @@
-import "./Banner.css"
-import successIcon from '/src/assets/success.svg'
-import warningIcon from '/src/assets/warning.svg'
-import errorIcon from '/src/assets/error.svg'
-import infoIcon from '/src/assets/info.svg'
+import './Banner.css';
+import successIcon from '/src/assets/success.svg';
+import warningIcon from '/src/assets/warning.svg';
+import errorIcon from '/src/assets/error.svg';
+import infoIcon from '/src/assets/info.svg';
 
 export default function Banner({children = null, status = "info", title}) {
 
@@ -22,4 +22,4 @@ export default function Banner({children = null, status = "info", title}) {
         {children && <p>{children && children}</p>}
       </div>
     </div>)
-}
+};
